@@ -1,0 +1,101 @@
+{
+  "name": "@antd-templater/vue-template-3.x",
+  "description": "后台管理系统模版 - 基于 Vue3 + Ant Design Vue4.x 组件库",
+  "homepage": "https://github.com/antd-templater/vue-template-3.x",
+  "author": "lin pengteng <china.linpengteng@gmail.com>",
+  "license": "MIT License",
+  "version": "4.3.1",
+  "keywords": [
+    "front-end",
+    "ant-design-vue",
+    "antd-template-vue3.x"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest --ui",
+    "cypress": "cypress open --component",
+    "build": "vue-tsc --noEmit && vite build",
+    "eslint": "npx eslint --fix --quiet src/**/*{.vue,.tsx,.ts}",
+    "release": "release-it",
+    "preview": "vite preview",
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "npx husky install",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
+    "@antd-templater/library-3.x": "^4.3.21",
+    "ant-design-vue": "^4.2.6",
+    "axios": "^1.7.9",
+    "dayjs": "^1.11.13",
+    "js-simpler": "^1.7.0",
+    "md5": "^2.3.0",
+    "msw": "^2.7.1",
+    "nprogress": "^0.2.0",
+    "pinia": "^3.0.1",
+    "pinia-plugin-persist": "^1.0.0",
+    "qs": "^6.14.0",
+    "vue": "^3.5.13",
+    "vue-ls": "^4.2.0",
+    "vue-router": "^4.5.0",
+    "vue-types": "^6.0.0"
+  },
+  "devDependencies": {
+    "@antd-templater/eslint-config": "^1.0.7",
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@eslint/config-inspector": "^1.0.0",
+    "@eslint/js": "^9.20.0",
+    "@release-it/conventional-changelog": "^10.0.0",
+    "@stylistic/eslint-plugin": "^4.0.1",
+    "@types/md5": "^2.3.5",
+    "@types/node": "^22.13.4",
+    "@types/nprogress": "^0.2.3",
+    "@types/qs": "^6.9.18",
+    "@types/vue-ls": "^3.2.7",
+    "@vitejs/plugin-legacy": "^6.0.1",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitejs/plugin-vue-jsx": "^4.1.1",
+    "@vitest/coverage-v8": "^3.0.6",
+    "@vitest/ui": "^3.0.6",
+    "@vue/test-utils": "^2.4.6",
+    "cypress": "^14.0.3",
+    "cz-message-helper": "^2.0.0",
+    "darkreader": "^4.9.104",
+    "eslint": "^9.20.1",
+    "eslint-plugin-vue": "^9.32.0",
+    "husky": "^9.1.7",
+    "jsdom": "^26.0.0",
+    "less": "^4.2.2",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.1",
+    "release-it": "^18.1.2",
+    "rollup": "^4.34.8",
+    "terser": "^5.39.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.1",
+    "unplugin-auto-import": "^19.1.0",
+    "unplugin-vue-components": "^28.4.0",
+    "vite": "^6.1.1",
+    "vite-plugin-compression": "^0.5.1",
+    "vitest": "^3.0.6",
+    "volar-service-prettyhtml": "^0.0.62",
+    "vue-tsc": "^2.2.2"
+  },
+  "config": {
+    "cz-message-helper": {
+      "config": ".cz-message.cjs"
+    },
+    "commitizen": {
+      "path": "node_modules/cz-message-helper"
+    }
+  },
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0",
+    "pnpm": ">=9.12.3"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  },
+  "packageManager": "pnpm@9.12.3"
+}
